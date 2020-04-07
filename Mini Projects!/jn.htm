@@ -1,0 +1,1035 @@
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUestion Booklet</title>
+<script src="jquery191.min.js"></script>
+<style type="text/CSS">
+body
+{
+
+background-color:black;
+}
+#r
+{
+color:yellow;
+background-color:purple;
+text-decoration:none;
+text-align:center;
+margin:30px;
+border:solid;
+border-color:blue;
+border-radius:50%;
+height:50px;
+font-size:250%;
+}
+#q1
+{ background-color:white;
+ width: 300px;
+ font-size:300%;
+position:absolute;
+top:170px;
+text-align:center;
+color:black;
+border-radius:50px;
+margin-left:20px;
+}
+#q2
+{ background-color:white;
+ width: 300px;
+ font-size:300%;
+position:absolute;
+top:250px;
+text-align:center;
+color:black;
+border-radius:50px;
+margin-left:20px;
+}
+#q3
+{ background-color:white;
+ width: 300px;
+ font-size:300%;
+ color:white;
+position:absolute;
+top:330px;
+text-align:center;
+color:black;
+border-radius:50px;
+margin-left:20px;
+}
+#q4
+{ background-color:white;
+ width: 300px;
+ font-size:300%;
+ color:black;
+position:absolute;
+top:410px;
+text-align:center;
+margin-left:20px;
+border-radius:50px;
+}
+#q5
+{ background-color:white;
+ width: 300px;
+ font-size:300%;
+
+position:absolute;
+top:490px;
+text-align:center;
+color:black;
+border-radius:50px;
+margin-left:20px;
+}
+#q6
+{ background-color:white;
+ width: 300px;
+ font-size:300%;
+ color:black;
+position:absolute;
+top:570px;
+text-align:center;
+border-radius:50px;
+margin-left:20px;
+}
+#y
+{
+position:absolute;
+left:1170px;
+font-size:300%;
+top:350px;
+}
+#t
+{
+font-size:300%;
+position:absolute;
+left:1230px;
+color:blue;
+top:250px;
+}
+#gh
+{
+position:absolute;
+top:150px;
+left:640px;
+}
+#ques
+{
+background-color:black;
+width:530px;
+height:50px;
+position:absolute;
+left:500px;
+top:390px;
+border:ridge;
+border-radius:10px;
+border-color:yellow;
+color:blue;
+text-align:center;
+font-size:150%;
+}
+#o1
+{
+background-color:black;
+width:250px;
+height:30px;
+position:absolute;
+left:500px;
+top:470px;
+border:ridge;
+border-radius:10px;
+border-color:yellow;
+color:blue;
+text-align:center;
+font-size:150%;
+
+}
+#o2
+{
+
+background-color:black;
+width:250px;
+height:30px;
+position:absolute;
+left:780px;
+top:470px;
+border:ridge;
+border-radius:10px;
+border-color:yellow;
+color:blue;
+text-align:center;
+font-size:150%;
+}
+#o3
+{
+background-color:black;
+width:250px;
+height:30px;
+position:absolute;
+left:500px;
+top:520px;
+border:ridge;
+border-radius:10px;
+border-color:yellow;
+color:blue;
+text-align:center;
+font-size:150%;
+
+}
+#o4
+{
+
+background-color:black;
+width:250px;
+height:30px;
+position:absolute;
+left:780px;
+top:520px;
+border:ridge;
+border-radius:10px;
+border-color:yellow;
+color:blue;
+text-align:center;
+font-size:150%;
+}
+#o1:hover
+{
+background-color:yellow;
+border-color:white;
+}
+#o2:hover
+{
+background-color:yellow;
+border-color:white;
+}
+#o3:hover
+{
+background-color:yellow;
+border-color:white;
+}
+#o4:hover
+{
+background-color:yellow;
+border-color:white;
+}
+
+#but
+{
+position:absolute;
+left:740px;
+top:700px;
+}
+#lock
+{
+position:absolute;
+left:723px;
+top:650px;
+font-size:200%;
+}
+
+
+#ybutton1
+{
+	position:relative;
+      	top:362px;
+left: 500px;
+}
+#ybutton2
+{
+	position:relative;
+      	top:413px;
+left: 475px;
+}
+#ybutton3
+{
+	position:relative;
+      	top:362px;
+left: 730px;
+}
+#ybutton4
+{
+	position:relative;
+      	top:413px;
+left: 707px;
+}
+
+</style>
+</head>
+<body>
+<h1 id="r">Kaun Banega CrorePati</h1>
+<div id="q1">$10000</div>
+<div id="q2">$8000</div>
+<div id="q3">$6000</div>
+<div id="q4">$4000</div>
+<div id="q5">$2000</div>
+<div id="q6">$1000</div>
+<h3 id="t">LifeLines</h3>
+
+<select id="y">Choose
+<option selected="selected" disabled="disabled">Select</option>
+<option>Phone a Friend</option>
+<option>50-50</option>
+</select>
+<img src="kbc.jpg" id="gh">
+<div id="ques" style="display:none">1. Who among these is an Actor?</div>
+
+<div class="def" id="o1" style="display:none"><b>a.Mayawati</b></div>
+<div class="def" id="o2" style="display:none"><b>b. rahul gandhi</b></div>
+<div class="def" id="o3" style="display:none"><b>c. SRK</b></div>
+<div class="def"  id="o4" style="display:none"><b>d. none of these</b></div>
+<input type="radio" name="ques" style="display:none" id="ybutton1">
+<input type="radio" name="ques" style="display:none" id="ybutton2">
+<input type="radio" name="ques" style="display:none"id="ybutton3">
+<input type="radio" name="ques"  style="display:none" id="ybutton4">
+
+
+<button id="lock">LOCK</button>
+<button id="but">Question</button>
+
+<script type="text/javascript">
+
+//Question 1
+var y = new Audio("ckbc.mp3");
+document.getElementById("but").onclick=function()
+{ $("#ques").fadeIn();
+$("#o1").fadeIn();
+$("#o2").fadeIn();
+$("#o3").fadeIn();
+$("#o4").fadeIn();
+$("#ybutton1").fadeIn();
+$("#ybutton2").fadeIn();
+$("#ybutton3").fadeIn();
+$("#ybutton4").fadeIn();
+var m = new Audio("ques.mp3");
+m.play();
+y.play();
+}
+
+document.getElementById("ybutton1").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o1").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{
+document.getElementById("o1").style.backgroundColor="red";
+document.getElementById("o3").style.backgroundColor="#ADFF2F";
+var y2 = new Audio("w.mp3");
+	y2.play();
+setTimeout(wrong,1000);
+}
+}
+
+
+document.getElementById("ybutton2").onclick=function()
+{
+var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o3").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{
+document.getElementById("o3").style.backgroundColor="#ADFF2F";
+setTimeout(ryt1,1000);
+var f =  new Audio("a4.mp3");
+f.play();
+}
+}
+
+
+function ryt1()
+{
+  	document.getElementById("q6").style.backgroundColor="yellow";
+alert("Congratulations");
+document.getElementById("but").onclick=function()
+{
+ques2();
+var m = new Audio("ques.mp3");
+m.play();
+}
+}
+
+document.getElementById("ybutton3").onclick=function()
+{
+var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o2").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{
+document.getElementById("o2").style.backgroundColor="red";
+document.getElementById("o3").style.backgroundColor="#ADFF2F";
+var y2 = new Audio("w.mp3");
+	y2.play();
+setTimeout(wrong,1000);
+
+}
+}
+
+document.getElementById("ybutton4").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o4").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{
+document.getElementById("o4").style.backgroundColor="red";
+document.getElementById("o3").style.backgroundColor="#ADFF2F";
+var y2 = new Audio("w.mp3");
+	y2.play();
+setTimeout(wrong,1000);
+}
+}
+
+
+//question 2
+
+
+function ques2()
+{y.play(); 
+document.getElementById("ybutton2").checked= false; 
+
+document.getElementById("ques").innerHTML="2. Which of the following is not a pair of parent and child, who have both won Nobel Prize?";
+	document.getElementById("ques").style.fontSize="130%";
+	document.getElementById("o1").innerHTML=" a. Marie Curie and Irene Curie";
+document.getElementById("o1").style.fontSize="100%";
+document.getElementById("o2").innerHTML="b. Neils Bohr, Aage Bohr ";
+document.getElementById("o2").style.fontSize="100%";
+document.getElementById("o3").innerHTML="c. Herman  Fischer, Hans Fischer";
+document.getElementById("o3").style.fontSize="100%";
+document.getElementById("o3").style.backgroundColor="black";
+document.getElementById("o3").onmouseover = function()
+          {
+               document.getElementById("o3").style.backgroundColor = "yellow";
+          }
+
+          document.getElementById("o3").onmouseout = function()
+          {
+              document.getElementById("o3").style.backgroundColor = "black";
+          }
+document.getElementById("o4").innerHTML=" d. J J Thompson, George Thompson";
+document.getElementById("o4").style.fontSize="95%";
+
+document.getElementById("ybutton1").onclick=function()
+{ var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o1").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{
+document.getElementById("o1").style.backgroundColor="red";
+document.getElementById("o3").style.backgroundColor="#ADFF2F";
+var y2 = new Audio("w.mp3");
+	y2.play();
+setTimeout(wrong,1000);
+}
+}
+document.getElementById("ybutton2").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o3").onmouseout=function()
+{
+	document.getElementById("o3").style.backgroundColor="yellow";
+}
+document.getElementById("lock").onclick=function()
+{
+document.getElementById("o3").style.backgroundColor="#ADFF2F";
+document.getElementById("o3").onmouseout=function()
+{
+	document.getElementById("o3").style.backgroundColor="#ADFF2F";
+}
+document.getElementById("o3").onmouseover=function()
+{
+	document.getElementById("o3").style.backgroundColor="#ADFF2F";
+}
+setTimeout(ryt2,1000);
+var f =  new Audio("a4.mp3");
+f.play();
+}
+}
+}
+
+function ryt2()
+{ 
+
+alert("Congratulations");
+document.getElementById("q5").style.backgroundColor="yellow";
+document.getElementById("but").onclick=function()
+{
+ques3();
+var m = new Audio("ques.mp3");
+m.play();
+}
+
+}
+
+
+//question 3
+
+
+function ques3()
+{y.play();     
+  document.getElementById("o3").style.backgroundColor="black";
+	document.getElementById("ques").innerHTML="3. International Literacy Day is observed on which day?";
+	document.getElementById("o1").innerHTML=" a. Sep 8";
+	document.getElementById("o2").innerHTML= "b. Nov 28";
+	document.getElementById("o3").innerHTML= "c. May 2";
+	document.getElementById("o4").innerHTML= "d. Sep 22";
+	document.getElementById("ybutton2").checked= false;
+	document.getElementById("o3").onmouseover= function()
+		{ document.getElementById("o3").style.backgroundColor="yellow";}
+	document.getElementById("o3").onmouseout= function()
+{	document.getElementById("o3").style.backgroundColor="black";}
+	
+	document.getElementById("ybutton1").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o1").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o1").style.backgroundColor="#ADFF2F";
+	ryt3();
+}
+
+}
+
+
+document.getElementById("ybutton4").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o4").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{
+document.getElementById("o1").style.backgroundColor="#ADFF2F";
+document.getElementById("o4").style.backgroundColor="red";
+var y2 = new Audio("w.mp3");
+	y2.play();
+setTimeout(wrong,1000);
+}
+}
+
+document.getElementById("ybutton3").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o2").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{document.getElementById("o1").style.backgroundColor="#ADFF2F";
+document.getElementById("o2").style.backgroundColor="red";
+var y = new Audio("w.mp3");
+	y.play();
+setTimeout(wrong,1000);
+}
+}
+
+document.getElementById("ybutton2").onclick=function()
+{  var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+ document.getElementById("o3").onmouseover=function()
+{
+document.getElementById("o3").style.backgroundColor="yellow";
+}
+document.getElementById("o3").onmouseout=function()
+{
+document.getElementById("o3").style.backgroundColor="yellow";
+}
+
+document.getElementById("lock").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o3").onmouseout=function()
+{
+document.getElementById("o3").style.backgroundColor="red";
+}
+document.getElementById("o3").onmouseover=function()
+{
+document.getElementById("o3").style.backgroundColor="red";
+}
+document.getElementById("o1").style.backgroundColor="#ADFF2F";
+var y = new Audio("w.mp3");
+	y.play();
+setTimeout(wrong,900);
+
+}
+ 
+}
+
+
+
+
+}
+
+function ryt3()
+{
+var f =  new Audio("a4.mp3");
+f.play();
+alert("Congratulations");
+document.getElementById("q4").style.backgroundColor="yellow";
+document.getElementById("but").onclick=function()
+{
+ques4();
+var m = new Audio("ques.mp3");
+m.play();
+}
+}
+
+//question 4
+
+function ques4()
+{ y.play();
+	document.getElementById("ybutton1").checked= false;
+	document.getElementById("o1").style.backgroundColor="black";
+	document.getElementById("o1").onmouseover=function()
+{
+document.getElementById("o1").style.backgroundColor="yellow";
+}
+document.getElementById("o1").onmouseout=function()
+{
+document.getElementById("o1").style.backgroundColor="black";
+}
+document.getElementById("ques").innerHTML="Who holds the Guinness World Record for the oldest person to be elected for the first time as PM of a nation? ";
+	document.getElementById("ques").style.fontSize="130%";
+	document.getElementById("o1").innerHTML=" a. P V Narasimha Rao";
+document.getElementById("o1").style.fontSize="100%";
+document.getElementById("o2").innerHTML="b.Chaudhary Charan Singh ";
+document.getElementById("o2").style.fontSize="100%";
+document.getElementById("o4").innerHTML="d. Morarji Desai";
+document.getElementById("o4").style.fontSize="100%";
+document.getElementById("o3").innerHTML="c. H D Deva Gowda";
+
+document.getElementById("ybutton4").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+document.getElementById("o4").style.backgroundColor="yellow";
+document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o4").style.backgroundColor="#ADFF2F";
+	setTimeout(ryt4,1000);
+	document.getElementById("q3").style.backgroundColor="yellow";
+var f =  new Audio("a4.mp3");
+f.play();
+	
+}
+}
+
+document.getElementById("ybutton1").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o1").onmouseover=function()
+{
+	document.getElementById("o1").style.backgroundColor="yellow";
+}
+
+document.getElementById("o1").onmouseout=function()
+{
+	document.getElementById("o1").style.backgroundColor="yellow";
+}
+	document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o1").style.backgroundColor="yellow";
+	document.getElementById("o4").style.backgroundColor="#ADFF2F";
+var y = new Audio("w.mp3");
+	y.play();
+	setTimeout(wrong,1000);
+
+}
+}
+	
+document.getElementById("ybutton2").onclick=function()
+{ var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o3").style.backgroundColor="yellow";
+	document.getElementById("o3").onmouseout=function()
+	{
+document.getElementById("o3").style.backgroundColor="yellow";
+}
+
+	document.getElementById("o3").onmouseout=function()
+	{
+document.getElementById("o3").style.backgroundColor="yellow";
+}
+
+	
+	document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o3").style.backgroundColor="red";
+	document.getElementById("o4").style.backgroundColor="#ADFF2F";
+var y = new Audio("w.mp3");
+	y.play();
+	setTimeout(wrong,1000);
+
+}
+}
+
+document.getElementById("ybutton3").onclick=function()
+{	var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o2").style.backgroundColor="yellow";
+	document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o2").style.backgroundColor="red";
+	document.getElementById("o4").style.backgroundColor="#ADFF2F";
+var y = new Audio("w.mp3");
+	y.play();
+setTimeout(wrong,1000);
+	
+}
+}
+
+}
+
+function ryt4()
+{  alert("Congratulations");
+	document.getElementById("but").onclick=function()
+{
+	ques5();
+var m = new Audio("ques.mp3");
+m.play();
+}
+}
+
+ //question 5
+
+
+function ques5()
+{ y.play();
+	document.getElementById("ybutton4").checked= false;
+	document.getElementById("o4").style.backgroundColor="black";
+	document.getElementById("o4").onmouseout=function()
+	{
+		document.getElementById("o4").style.backgroundColor="black";
+	}	
+document.getElementById("o4").onmouseover=function()
+	{
+		document.getElementById("o4").style.backgroundColor="yellow";
+	}	
+
+
+		document.getElementById("ques").innerHTML="5. The first wholly Indian Bank was set up in";
+	document.getElementById("o1").innerHTML=" a. 1794";
+	document.getElementById("o2").innerHTML= "b. 1894";
+	document.getElementById("o3").innerHTML= "c. 1896";
+	document.getElementById("o4").innerHTML= "d. 1902";
+
+document.getElementById("ybutton4").onclick=function()
+{	var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o4").style.backgroundColor="yellow";
+	document.getElementById("o4").onmouseout=function()
+{
+	document.getElementById("o4").style.backgroundColor="yellow";
+}
+	document.getElementById("o4").onmouseover=function()
+{
+	document.getElementById("o4").style.backgroundColor="yellow";
+}
+	document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o4").style.backgroundColor="red";
+	document.getElementById("o2").style.backgroundColor="#ADFF2F";
+var y = new Audio("w.mp3");
+	y.play();
+	setTimeout(wrong,1000);
+}
+}
+
+document.getElementById("ybutton1").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;	
+document.getElementById("o1").style.backgroundColor="yellow";
+	document.getElementById("o1").onmouseout=function()
+{
+	document.getElementById("o1").style.backgroundColor="yellow";
+}
+	document.getElementById("o1").onmouseover=function()
+{
+	document.getElementById("o1").style.backgroundColor="yellow";
+}
+document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o1").style.backgroundColor="red";
+	document.getElementById("o2").style.backgroundColor="#ADFF2F";
+var y = new Audio("w.mp3");
+	y.play();
+	setTimeout(wrong,1000);
+}		
+}
+document.getElementById("ybutton2").onclick=function()
+{var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;	
+document.getElementById("o3").style.backgroundColor="yellow";
+document.getElementById("o3").onmouseout=function()
+{
+	document.getElementById("o3").style.backgroundColor="yellow";
+}
+	document.getElementById("o3").onmouseover=function()
+{
+	document.getElementById("o3").style.backgroundColor="yellow";
+}
+	document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o3").style.backgroundColor="red";
+	document.getElementById("o2").style.backgroundColor="#ADFF2F";
+var y = new Audio("w.mp3");
+	y.play();
+	setTimeout(wrong,1000);
+}		
+}
+
+
+document.getElementById("ybutton3").onclick=function()
+{	var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o2").style.backgroundColor="yellow";
+	document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o2").style.backgroundColor="#ADFF2F";
+	ryt9();	
+
+}
+
+
+}
+
+}
+
+function ryt9()
+{
+	var f= new Audio("a4.mp3");
+	f.play();
+	alert("Congratulations");
+	document.getElementById("q2").style.backgroundColor="yellow";
+	document.getElementById("but").onclick=function()
+{
+	queslast();
+	var m = new Audio("ques.mp3");
+m.play();
+}
+}
+
+	//LAST QUESTION
+
+function queslast()
+{ y.play();
+	document.getElementById("ybutton3").checked= false;
+	document.getElementById("o2").style.background="black";
+	document.getElementById("o2").onmouseover=function()
+{
+	document.getElementById("o2").style.backgroundColor="yellow";
+}
+document.getElementById("o2").onmouseout=function()
+{
+	document.getElementById("o2").style.backgroundColor="black";
+}
+	document.getElementById("ques").innerHTML="Who,in 1978,became the first person to be born in the continent of Antartica?";
+	document.getElementById("ques").style.fontSize="130%";
+	document.getElementById("o1").innerHTML=" a. Emillio Palma";
+document.getElementById("o1").style.fontSize="100%";
+document.getElementById("o2").innerHTML="b. James Weddell ";
+document.getElementById("o2").style.fontSize="100%";
+document.getElementById("o3").innerHTML="c. Nathaniel Palmer";
+document.getElementById("o3").style.fontSize="100%";
+document.getElementById("o4").innerHTML="Charles Wilkes";
+document.getElementById("o4").style.fontSize="100%";
+
+document.getElementById("ybutton1").onclick=function()
+{ var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o1").style.backgroundColor="yellow";
+	document.getElementById("o1").onmouseout=function()
+{
+	document.getElementById("o1").style.backgroundColor="yellow";
+}
+document.getElementById("o1").onmouseover=function()
+{
+	document.getElementById("o1").style.backgroundColor="yellow";
+}
+document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o1").style.backgroundColor="#ADFF2F";
+		WIN();
+}
+
+
+}
+document.getElementById("ybutton2").onclick=function()
+{	var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o3").style.backgroundColor="yellow";
+document.getElementById("o3").onmouseout=function()
+{
+	document.getElementById("o3").style.backgroundColor="yellow";
+}
+document.getElementById("o3").onmouseover=function()
+{
+	document.getElementById("o3").style.backgroundColor="yellow";
+}
+document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o1").style.backgroundColor="#ADFF2F";
+	document.getElementById("o3").style.backgroundColor="red";
+var y = new Audio("w.mp3");
+	y.play();
+setTimeout(wrong,1000);
+}
+
+}
+document.getElementById("ybutton3").onclick=function()
+{	var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o2").style.backgroundColor="yellow";
+document.getElementById("o2").onmouseout=function()
+{
+	document.getElementById("o2").style.backgroundColor="yellow";
+}
+document.getElementById("o2").onmouseover=function()
+{
+	document.getElementById("o2").style.backgroundColor="yellow";
+}
+document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o1").style.backgroundColor="#ADFF2F";
+	document.getElementById("o2").style.backgroundColor="red";
+var y = new Audio("w.mp3");
+	y.play();
+setTimeout(wrong,1000);
+}
+
+}
+document.getElementById("ybutton4").onclick=function()
+{	var y1 = new Audio("lock.mp3");
+y1.play();
+y.pause();
+y.currentTime=0;
+	document.getElementById("o4").style.backgroundColor="yellow";
+document.getElementById("o4").onmouseout=function()
+{
+	document.getElementById("o4").style.backgroundColor="yellow";
+}
+document.getElementById("o4").onmouseover=function()
+{
+	document.getElementById("o4").style.backgroundColor="yellow";
+}
+document.getElementById("lock").onclick=function()
+{
+	document.getElementById("o1").style.backgroundColor="#ADFF2F";
+	document.getElementById("o4").style.backgroundColor="red";
+var y = new Audio("w.mp3");
+	y.play();
+setTimeout(wrong,1000);
+}
+
+}
+
+
+
+}
+
+function WIN()
+{ var t=new Audio("ac.mp3");
+ t.play();
+	document.getElementById("lock").disabled="disabled";
+document.getElementById("but").disabled="disabled";
+	var f= new Audio("a4.mp3");
+	f.play();
+	alert("Congratulations");
+	document.getElementById("q1").style.backgroundColor="yellow";
+	 document.getElementById("o3").style.display="none";
+document.getElementById("o1").style.display="none";
+document.getElementById("o2").style.display="none";
+document.getElementById("o4").style.display="none";
+document.getElementById("q3").style.display="none";
+
+document.getElementById("q2").style.display="none";
+document.getElementById("q4").style.display="none";
+document.getElementById("q5").style.display="none";
+document.getElementById("q6").style.display="none";
+document.getElementById("y").style.display="none";
+document.getElementById("ybutton1").style.display="none";
+document.getElementById("ybutton2").style.display="none";
+document.getElementById("ybutton3").style.display="none";
+document.getElementById("ybutton4").style.display="none";
+document.getElementById("ques").style.display="none";
+document.getElementById("lock").style.display="none";
+document.getElementById("t").style.display="none";
+document.getElementById("but").style.display="none";
+$("#q1").animate({width:'1450px',top:'500px'},"slow");
+
+
+}
+
+
+
+function wrong()
+{
+  
+	
+alert("You Lose");
+  document.getElementById("o3").style.display="none";
+document.getElementById("o1").style.display="none";
+document.getElementById("o2").style.display="none";
+document.getElementById("o4").style.display="none";
+document.getElementById("q3").style.display="none";
+document.getElementById("q1").style.display="none";
+document.getElementById("q2").style.display="none";
+document.getElementById("q4").style.display="none";
+document.getElementById("q5").style.display="none";
+document.getElementById("q6").style.display="none";
+document.getElementById("ybutton1").style.display="none";
+document.getElementById("ybutton2").style.display="none";
+document.getElementById("ybutton3").style.display="none";
+document.getElementById("ybutton4").style.display="none";
+document.getElementById("ques").style.display="none";
+document.getElementById("lock").disabled="disabled";
+document.getElementById("but").disabled="disabled";
+
+
+
+
+	setTimeout(y,1000);
+}
+
+
+
+
+
+</script>
+</body>
+</html>
